@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400"
+  role="img" aria-label="gifts category">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#F8E8DF"/>
+    </linearGradient>
+  </defs>
+  <!-- fills the full square: the container clips it to a circle, so any inner
+       ring here would read as a second, smaller disc -->
+  <rect width="400" height="400" fill="url(#g)"/>
+  <circle cx="200" cy="200" r="198" fill="#fff" opacity=".42"/>
+  <g transform="translate(200 200) scale(1.12) translate(-200 -200)">
+    
+    <rect x="112" y="160" width="176" height="132" rx="12" fill="#B85C38" opacity=".92"/>
+    <rect x="100" y="126" width="200" height="46" rx="11" fill="#B85C38"/>
+    <path d="M200 126v166" stroke="#fff" stroke-width="9"/>
+    <path d="M200 126c-34-6-52-18-46-34s34-6 46 34c12-40 40-50 46-34s-12 28-46 34z"
+          fill="#B85C38"/>
+  </g>
+</svg>

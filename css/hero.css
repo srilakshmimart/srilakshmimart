@@ -1,0 +1,118 @@
+/* ============================================================
+   HERO — cinematic spice video, headline left, utilities top-right
+   ============================================================ */
+
+.hero3{
+  position:relative; isolation:isolate; overflow:hidden;
+  /* tall enough to feel cinematic, short enough that the next section
+     is already peeking in at 100% zoom */
+  min-height:clamp(400px, 52vh, 520px);
+  display:flex; align-items:center;
+  background:var(--primary-dark);
+}
+
+/* ---------- video layer ---------- */
+.hero3-media{ position:absolute; inset:0; z-index:-2; overflow:hidden; }
+.hero3-video{
+  width:100%; height:100%; object-fit:cover; object-position:50% 50%;
+  display:block;
+}
+.hero3-scrim{
+  position:absolute; inset:0;
+  background:linear-gradient(100deg,
+    rgba(30,18,20,.92) 0%, rgba(30,18,20,.78) 32%,
+    rgba(30,18,20,.44) 60%, rgba(30,18,20,.26) 100%);
+}
+.hero3-warm{
+  position:absolute; inset:0;
+  background:
+    radial-gradient(120% 90% at 80% 42%, rgba(196,154,74,.18) 0%, transparent 58%),
+    radial-gradient(140% 120% at 50% 50%, transparent 54%, rgba(26,14,16,.5) 100%);
+}
+
+/* ---------- left: the message ---------- */
+.hero3-inner{
+  position:relative; z-index:1; width:100%;
+  padding:clamp(26px,3.4vw,48px) var(--gutter);
+}
+.hero3-lede{ max-width:min(620px,100%); color:#fff; }
+
+.hero3-logo{
+  width:clamp(56px,5.4vw,72px); height:auto; aspect-ratio:1;
+  display:block; margin-bottom:14px;
+}
+.hero3-brand{
+  display:block; font-size:var(--fs-xs); letter-spacing:.24em;
+  text-transform:uppercase; color:var(--accent-light); margin-bottom:10px;
+}
+
+/* the headline carries the hero — large, tight, high contrast */
+.hero3-head{
+  margin:0; font-family:var(--font-display); font-weight:700;
+  font-size:clamp(2.1rem,5vw,4rem); line-height:.98; letter-spacing:-.035em;
+  color:#fff; text-shadow:0 2px 24px rgba(26,14,16,.45);
+}
+.hero3-head span,.hero3-head em{ display:block; }
+.hero3-head em{ font-style:italic; color:var(--accent-light); }
+
+.hero3-sub{
+  margin-top:15px; color:rgba(255,255,255,.88); max-width:42ch;
+  font-size:clamp(.9rem,1.05vw,1rem);
+}
+.hero3-cta{ margin-top:20px; display:flex; gap:10px; flex-wrap:wrap; }
+.btn-clear{
+  border-color:rgba(255,255,255,.55); color:#fff; background:rgba(255,255,255,.09);
+  backdrop-filter:blur(6px);
+}
+.btn-clear:hover{ background:rgba(255,255,255,.2); border-color:#fff; transform:translateY(-2px); }
+
+.hero3-trust{
+  margin-top:20px; padding-top:15px; border-top:1px solid rgba(255,255,255,.22);
+  display:flex; gap:18px; flex-wrap:wrap;
+  font-size:var(--fs-sm); color:rgba(255,255,255,.84);
+}
+.hero3-trust li{ display:flex; align-items:center; gap:7px; }
+.hero3-trust i{ color:var(--accent-light); }
+
+/* entrance */
+.hero3-lede > *{ opacity:0; transform:translateY(14px); animation:h3up .62s var(--e-out) forwards; }
+.hero3-lede > *:nth-child(1){ animation-delay:.06s }
+.hero3-lede > *:nth-child(2){ animation-delay:.12s }
+.hero3-lede > *:nth-child(3){ animation-delay:.18s }
+.hero3-lede > *:nth-child(4){ animation-delay:.25s }
+.hero3-lede > *:nth-child(5){ animation-delay:.31s }
+.hero3-lede > *:nth-child(6){ animation-delay:.37s }
+@keyframes h3up{ to{ opacity:1; transform:none } }
+
+/* ---------- tablet ---------- */
+@media(max-width:1023px){
+  .hero3{ min-height:clamp(380px,50vh,460px); }
+  .hero3-video{ object-position:56% 50%; }
+  .hero3-lede{ max-width:min(560px,100%); }
+}
+
+/* ---------- mobile ---------- */
+@media(max-width:768px){
+  .hero3{ min-height:clamp(400px,64vh,520px); align-items:flex-end; }
+  /* the mortar sits centre-right; hold it as the crop narrows */
+  .hero3-video{ object-position:58% 44%; }
+  .hero3-scrim{
+    background:linear-gradient(180deg,
+      rgba(30,18,20,.72) 0%, rgba(30,18,20,.46) 34%, rgba(30,18,20,.90) 78%);
+  }
+  .hero3-inner{ padding-bottom:26px; }
+  .hero3-logo{ width:52px; margin-bottom:10px; }
+  .hero3-head{ font-size:clamp(1.9rem,9vw,2.6rem); }
+  .hero3-sub{ margin-top:11px; }
+  .hero3-cta{ margin-top:16px; }
+  .hero3-cta .btn{ flex:1 1 auto; min-width:150px; }
+  .hero3-trust{ margin-top:15px; padding-top:12px; gap:12px; font-size:var(--fs-xs); }
+}
+@media(max-width:420px){
+  .hero3-trust li:nth-child(3){ display:none; }   /* keep the row to one line */
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  .hero3-lede > *{ animation:none; opacity:1; transform:none; }
+}

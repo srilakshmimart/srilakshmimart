@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"
+  role="img" aria-label="Thinai Millet Dosai Mix — illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#F8F0DE"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="50%" cy="42%" r="72%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#835e1d" stop-opacity=".10"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <circle cx="449.85992452588863" cy="117.70343023059118" r="0.9487258644070131"
+       fill="#835e1d" opacity="0.11179961624639093"/><circle cx="82.54772953062678" cy="302.7679597357139" r="0.7823446631815026"
+       fill="#835e1d" opacity="0.057819047871892834"/><circle cx="248.6931458677599" cy="32.29019166542692" r="1.589841369208806"
+       fill="#835e1d" opacity="0.0943125128952379"/><circle cx="156.40783698689557" cy="216.1446534209627" r="1.5254461053877353"
+       fill="#835e1d" opacity="0.07526881934388951"/><circle cx="410.6871339803036" cy="485.58801292143204" r="1.6937249903537914"
+       fill="#835e1d" opacity="0.06796157599331885"/><circle cx="245.935180778585" cy="24.625122081779466" r="1.4875715348811687"
+       fill="#835e1d" opacity="0.11775493028934811"/><circle cx="97.94879154951721" cy="13.889968878538333" r="1.2906226298728132"
+       fill="#835e1d" opacity="0.11383669975392369"/><circle cx="118.0490112854396" cy="94.00141911115564" r="1.285435384784562"
+       fill="#835e1d" opacity="0.05454219341489589"/><circle cx="488.17408775173783" cy="149.15814215930092" r="1.6625465516757902"
+       fill="#835e1d" opacity="0.07556926847694874"/><circle cx="107.3161011241917" cy="225.3642121410762" r="0.9992514850102605"
+       fill="#835e1d" opacity="0.052796375752797525"/><circle cx="164.74598701519238" cy="491.18267845138104" r="1.2384706380490542"
+       fill="#835e1d" opacity="0.06242906451804055"/><circle cx="2.632156373296006" cy="43.80642511500345" r="1.5268252510702356"
+       fill="#835e1d" opacity="0.07431467534243813"/><circle cx="183.67651375740604" cy="25.36791993368786" r="1.043172535460057"
+       fill="#835e1d" opacity="0.11803606155702662"/><circle cx="21.77020264685629" cy="352.36128251271384" r="1.7387021308013715"
+       fill="#835e1d" opacity="0.05760783434268452"/><circle cx="34.215713516909496" cy="122.88290410995619" r="1.7056140099678254"
+       fill="#835e1d" opacity="0.07343946338791375"/><circle cx="227.7512818443362" cy="138.486389224644" r="1.2483631017377428"
+       fill="#835e1d" opacity="0.11881046179160965"/><circle cx="125.60375982411381" cy="498.6877443728446" r="0.8930200100843888"
+       fill="#835e1d" opacity="0.09575435372337437"/><circle cx="39.16790773308273" cy="174.08613594532298" r="1.7427498583880952"
+       fill="#835e1d" opacity="0.11471998932991177"/><circle cx="428.164184769692" cy="332.33654800631876" r="1.0800030471663935"
+       fill="#835e1d" opacity="0.056319453719220806"/><circle cx="116.92005925854671" cy="130.03158575391006" r="1.16438239238429"
+       fill="#835e1d" opacity="0.0797189837832558"/><circle cx="332.50314346538073" cy="37.61120607220158" r="0.9754015536398634"
+       fill="#835e1d" opacity="0.11979392889411838"/><circle cx="418.67993183558804" cy="428.99047871538926" r="1.4086408141575013"
+       fill="#835e1d" opacity="0.06195571423133636"/><circle cx="387.6565095799307" cy="105.74212651408376" r="1.6983273004173896"
+       fill="#835e1d" opacity="0.10709998848713004"/><circle cx="479.3140871372605" cy="260.9259034418156" r="1.5279302362482672"
+       fill="#835e1d" opacity="0.09906215431590665"/><circle cx="36.09338380586979" cy="22.8692779647509" r="0.9760665477607708"
+       fill="#835e1d" opacity="0.06569761813417899"/><circle cx="462.1817476517436" cy="96.94622807248786" r="1.5194635842086113"
+       fill="#835e1d" opacity="0.11843816521970471"/><circle cx="326.2564698784875" cy="219.14562998486014" r="0.8951083899452855"
+       fill="#835e1d" opacity="0.071112918565568"/><circle cx="239.17022716215357" cy="404.6514284110868" r="1.083984553992741"
+       fill="#835e1d" opacity="0.08679490925594929"/><circle cx="244.4758912271242" cy="302.4688111760043" r="0.9456138492774282"
+       fill="#835e1d" opacity="0.1031089028963395"/><circle cx="102.72851567283669" cy="400.411148257745" r="1.7068066720882462"
+       fill="#835e1d" opacity="0.1072561753062793"/>
+
+  <!-- plate the motif sits on, so lighting reads the same on every card -->
+  <circle cx="256" cy="272" r="214" fill="#fff" opacity=".5"/>
+  <circle cx="256" cy="272" r="214" fill="none" stroke="#c79d4d" stroke-width="1.6" opacity=".3"/>
+  <circle cx="256" cy="272" r="234" fill="none" stroke="#c79d4d" stroke-width="1" opacity=".15"/>
+
+  <g transform="rotate(0.71 256 272)"><ellipse cx="256" cy="368" rx="196" ry="46" fill="#835e1d" opacity=".16"/>
+           <ellipse cx="256" cy="344" rx="192" ry="62" fill="#835e1d"/>
+           <ellipse cx="256" cy="330" rx="180" ry="58" fill="#c79d4d"/><ellipse cx="256" cy="314" rx="160" ry="52.800000000000004"
+            fill="#F8F0DE" opacity=".96"/>
+          <path d="M156.8 312q99.2 -22 198.4 0"
+            stroke="#c79d4d" stroke-width="6" fill="none" stroke-linecap="round" opacity=".55"/><ellipse cx="256" cy="284" rx="144" ry="47.52"
+            fill="#e0c88f" opacity=".96"/>
+          <path d="M166.72 282q89.28 -19 178.56 0"
+            stroke="#c79d4d" stroke-width="6" fill="none" stroke-linecap="round" opacity=".55"/><ellipse cx="256" cy="254" rx="128" ry="42.24"
+            fill="#F8F0DE" opacity=".96"/>
+          <path d="M176.64 252q79.36 -16 158.72 0"
+            stroke="#c79d4d" stroke-width="6" fill="none" stroke-linecap="round" opacity=".55"/><circle cx="247.60196926891896" cy="261.3067309992885" r="13.76249969273922"
+            fill="#835e1d" opacity=".3"/><circle cx="303.31372504742524" cy="236.69807601193807" r="15.12813058827451"
+            fill="#835e1d" opacity=".4"/><circle cx="249.8717642109244" cy="232.25143098842884" r="10.823789117310097"
+            fill="#835e1d" opacity=".5"/></g>
+
+  <rect width="512" height="512" fill="url(#vig)"/>
+
+  <!-- gold rule, echoing the eyebrow rule used throughout the site -->
+  <path d="M206 462h100" stroke="#B08D3F" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+</svg>

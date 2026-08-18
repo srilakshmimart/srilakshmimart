@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"
+  role="img" aria-label="Kuthiraivali Millet Dosai Mix — illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#F8F0DE"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="50%" cy="42%" r="72%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#936e2d" stop-opacity=".10"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <circle cx="362.8517457744348" cy="54.499450708972034" r="0.8750424832920741"
+       fill="#936e2d" opacity="0.0847149008674151"/><circle cx="497.5024416379176" cy="196.5190430602613" r="1.4752177242074245"
+       fill="#936e2d" opacity="0.0855566883252732"/><circle cx="149.07666022566923" cy="308.1088868622244" r="1.2115893366334909"
+       fill="#936e2d" opacity="0.1067390156056448"/><circle cx="350.83837906962185" cy="134.13623053121205" r="1.2437739374785561"
+       fill="#936e2d" opacity="0.06666279793561566"/><circle cx="129.78761297547612" cy="55.907409694002666" r="1.4499483082210405"
+       fill="#936e2d" opacity="0.0944507336823506"/><circle cx="197.98034677187928" cy="147.42321784208679" r="1.7139468436194336"
+       fill="#936e2d" opacity="0.052077801228537134"/><circle cx="370.8573133288218" cy="291.52917494044135" r="0.8186914682941006"
+       fill="#936e2d" opacity="0.11064476463042422"/><circle cx="423.841858107523" cy="56.98419192106658" r="1.6616913531728517"
+       fill="#936e2d" opacity="0.1147021484676293"/><circle cx="256.25292980682707" cy="342.0722657842898" r="0.8565778733028927"
+       fill="#936e2d" opacity="0.09066154690490177"/><circle cx="102.01629643422379" cy="189.18550118672917" r="1.0852330448037169"
+       fill="#936e2d" opacity="0.05768206835150815"/><circle cx="183.3993073363785" cy="81.89459232329139" r="1.6576278899598997"
+       fill="#936e2d" opacity="0.06373572827025117"/><circle cx="148.78541571869766" cy="194.79290780555127" r="1.6307270173592154"
+       fill="#936e2d" opacity="0.057064439061593475"/><circle cx="133.20869452003794" cy="76.96154788740051" r="1.0888653846405751"
+       fill="#936e2d" opacity="0.10115381600854631"/><circle cx="66.34185794104908" cy="257.48420727322076" r="1.7407674317438004"
+       fill="#936e2d" opacity="0.055980143549842834"/><circle cx="449.59010335877076" cy="410.5038454059995" r="1.245065701261659"
+       fill="#936e2d" opacity="0.05564918637538757"/><circle cx="176.88838204037788" cy="490.04748557975864" r="1.4119198564029856"
+       fill="#936e2d" opacity="0.062287013536452794"/><circle cx="414.5997468971646" cy="69.11749270796659" r="0.7341674536625703"
+       fill="#936e2d" opacity="0.10612258377304422"/><circle cx="464.4930422084839" cy="394.80700701978384" r="1.0357560397757943"
+       fill="#936e2d" opacity="0.08951110126427891"/><circle cx="450.32312032688554" cy="321.28552261054773" r="1.5968381170634358"
+       fill="#936e2d" opacity="0.10827494862409073"/><circle cx="60.934448270562314" cy="36.92030336191892" r="1.161770540690874"
+       fill="#936e2d" opacity="0.0568085294993634"/><circle cx="37.16734315695583" cy="42.75115968787631" r="1.5658967946031583"
+       fill="#936e2d" opacity="0.11339909794898663"/><circle cx="24.699096691188913" cy="219.76698313456353" r="1.3783073786079454"
+       fill="#936e2d" opacity="0.10353744866956839"/><circle cx="276.2100221012766" cy="404.6140748954444" r="0.9165212989861711"
+       fill="#936e2d" opacity="0.05554823488255415"/><circle cx="94.2712707958516" cy="376.3058320844107" r="1.297674227039178"
+       fill="#936e2d" opacity="0.09926771643071795"/><circle cx="382.6667482250681" cy="272.3034669236762" r="1.6554226402917052"
+       fill="#936e2d" opacity="0.06839704991243642"/><circle cx="306.8073731897433" cy="443.63159200345706" r="0.8535519123792424"
+       fill="#936e2d" opacity="0.09648634644527285"/><circle cx="459.50433371006716" cy="164.50653083832307" r="1.0214514376229846"
+       fill="#936e2d" opacity="0.08684252383040383"/><circle cx="308.62445082730824" cy="69.09930423139562" r="1.0839974375367152"
+       fill="#936e2d" opacity="0.06688808680367102"/><circle cx="205.21327219028643" cy="344.8667604144974" r="1.1338738324278377"
+       fill="#936e2d" opacity="0.1179476249534393"/><circle cx="458.950988983247" cy="335.0044557224049" r="1.156451308939816"
+       fill="#936e2d" opacity="0.10604735257851303"/>
+
+  <!-- plate the motif sits on, so lighting reads the same on every card -->
+  <circle cx="256" cy="272" r="214" fill="#fff" opacity=".5"/>
+  <circle cx="256" cy="272" r="214" fill="none" stroke="#b98f3f" stroke-width="1.6" opacity=".3"/>
+  <circle cx="256" cy="272" r="234" fill="none" stroke="#b98f3f" stroke-width="1" opacity=".15"/>
+
+  <g transform="rotate(-2.26 256 272)"><ellipse cx="256" cy="368" rx="196" ry="46" fill="#936e2d" opacity=".16"/>
+           <ellipse cx="256" cy="344" rx="192" ry="62" fill="#936e2d"/>
+           <ellipse cx="256" cy="330" rx="180" ry="58" fill="#b98f3f"/><ellipse cx="256" cy="314" rx="160" ry="52.800000000000004"
+            fill="#F8F0DE" opacity=".96"/>
+          <path d="M156.8 312q99.2 -22 198.4 0"
+            stroke="#b98f3f" stroke-width="6" fill="none" stroke-linecap="round" opacity=".55"/><ellipse cx="256" cy="284" rx="144" ry="47.52"
+            fill="#e8d097" opacity=".96"/>
+          <path d="M166.72 282q89.28 -19 178.56 0"
+            stroke="#b98f3f" stroke-width="6" fill="none" stroke-linecap="round" opacity=".55"/><circle cx="304.8698020516289" cy="259.9475186001265" r="12.446957709475868"
+            fill="#936e2d" opacity=".3"/><circle cx="220.98383666527636" cy="254.53756649351567" r="14.674468997248667"
+            fill="#936e2d" opacity=".4"/><circle cx="225.99628450162535" cy="244.7267837583678" r="13.992303851056985"
+            fill="#936e2d" opacity=".5"/></g>
+
+  <rect width="512" height="512" fill="url(#vig)"/>
+
+  <!-- gold rule, echoing the eyebrow rule used throughout the site -->
+  <path d="M206 462h100" stroke="#B08D3F" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+</svg>

@@ -1,0 +1,241 @@
+/* ============================================================
+   SRI LAKSHMI MART V2 — DESIGN SYSTEM
+   Tokens only. No component styles in this file.
+   ============================================================ */
+
+:root{
+  /* ---- palette ------------------------------------------------
+     A warm Indian palette: deep burgundy for authority, terracotta for
+     warmth, antique gold for value cues, on a warm ivory ground. The
+     logo keeps its own green and gold — that artwork is untouched — but
+     the interface no longer borrows from it. Every colour used anywhere
+     resolves back to a token here; there are no loose hex values in the
+     component sheets. */
+
+  /* semantic core */
+  --primary:        #7A263A;   /* burgundy — nav, primary buttons, price */
+  --primary-dark:   #5A1C2B;   /* deepest — footer, dark bands */
+  --primary-soft:   #96334A;   /* hover / raised states */
+  --primary-tint:   #F3E3E6;   /* pale wash for chips and quiet fills */
+
+  --secondary:      #B85C38;   /* terracotta */
+  --secondary-ink:  #A24E2E;   /* text-safe terracotta: 5.1:1 on background */
+  --secondary-soft: #CE7A56;
+  --secondary-tint: #F8E9E0;
+
+  --accent:         #C49A4A;   /* antique gold — rules, badges, decoration */
+  --accent-ink:     #856427;   /* text-safe gold: 4.86:1 on background */
+  --accent-light:   #E0C07A;   /* gold for dark surfaces only */
+  --accent-tint:    #F6ECD9;
+
+  --background:     #F7F1E7;   /* warm ivory page ground */
+  --background-alt: #EFE5D6;   /* banded sections */
+  --surface:        #FFFDF8;   /* cards, drawers */
+  --surface-2:      #F3EBDD;   /* inset surfaces, table heads */
+
+  --text:           #25211D;   /* espresso */
+  --text-2:         #4A423A;   /* body copy on light */
+  --muted-text:     #6E655C;   /* warm taupe — 5.08:1 on background */
+  --on-dark:        #F2E9DE;
+  --on-dark-muted:  rgba(242,233,222,.74);
+
+  --border:         #DED4C7;
+  --border-soft:    #ECE3D5;
+
+  --success:        #7A263A;   /* confirmations use the brand, not green */
+  --danger:         #9B3B33;
+  --whatsapp:       #1FA855;   /* WhatsApp's own brand colour, kept */
+  --whatsapp-dark:  #17853F;
+
+  /* ---- hero atmosphere washes ---- */
+  --wash-malt:      #F0E2E4;
+  --wash-readymix:  #F5E8D6;
+  --wash-masala:    #F7E4DA;
+  --wash-laddu:     #F2DFE3;
+
+  /* ---- category accents, all within the new family ---- */
+  --c-organic:     #7A263A;
+  --c-women:       #96334A;
+  --c-kids:        #C08340;
+  --c-jewellery:   #5A1C2B;
+  --c-gift:        #B85C38;
+  --c-home:        #A24E2E;
+
+  /* ---- sidebar surface ---- */
+  --rail-bg:        #F5EEE2;
+  --rail-bg-2:      #EFE5D6;
+  --rail-ink:       #2A2320;   /* 13.4:1 */
+  --rail-muted:     #6E655C;
+  --rail-hover:     #EADFCC;
+  --rail-active:    #F0E0E2;   /* soft burgundy */
+  --rail-active-ink:#6E2135;   /* 8.5:1 on the active fill */
+  --rail-line:      #E3D8C8;
+
+  /* ---- legacy aliases ----------------------------------------
+     Component sheets were written against these names; pointing them
+     at the tokens above means the whole site re-skins from one place. */
+  --forest:        var(--primary);
+  --forest-deep:   var(--primary-dark);
+  --forest-soft:   var(--primary-soft);
+  --moss:          var(--secondary);
+  --gold:          var(--accent);
+  --gold-ink:      var(--accent-ink);
+  --gold-light:    var(--accent-light);
+  --gold-pale:     var(--accent-tint);
+  --clay:          var(--secondary);
+  --berry:         var(--primary);
+  --paper:         var(--background);
+  --paper-warm:    var(--background-alt);
+  --ink:           var(--text);
+  --ink-2:         var(--text-2);
+  --muted:         var(--muted-text);
+  --line:          var(--border);
+  --line-soft:     var(--border-soft);
+
+  /* ---- type ---- */
+  --font-display: "Fraunces", "Playfair Display", Georgia, serif;
+  --font-body:    "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-hero:  clamp(2.1rem, 5.4vw, 4.4rem);
+  --fs-h1:    clamp(1.95rem, 4.2vw, 3.3rem);
+  --fs-h2:    clamp(1.55rem, 2.9vw, 2.35rem);
+  --fs-h3:    clamp(1.12rem, 1.75vw, 1.42rem);
+  --fs-body:  clamp(.94rem, 1.05vw, 1.02rem);
+  --fs-sm:    .82rem;
+  --fs-xs:    .72rem;
+
+  /* ---- spacing ----
+     Deliberately tighter than the type scale. Page height is reduced by
+     removing empty space, never by shrinking cards, text or controls. */
+  --sp-1: 4px;  --sp-2: 6px;  --sp-3: 10px; --sp-4: 14px;
+  --sp-5: 20px; --sp-6: 26px; --sp-7: 36px; --sp-8: 48px;
+  --sp-9: 60px; --sp-10: 76px;
+
+  /* Section rhythm — a controlled scale rather than one huge gap.
+     Sections that carry a lot of content get --section-y; sections that
+     simply continue the one above get --section-y-tight, so the page
+     reads as grouped bands instead of evenly spaced islands. */
+  --section-y:       clamp(28px, 3.6vw, 56px);   /* mobile 28 → desktop 56 */
+  --section-y-tight: clamp(22px, 2.6vw, 38px);
+  --section-y-lg:    clamp(34px, 4.4vw, 68px);
+  --gutter:          clamp(16px, 3vw, 48px);
+
+  /* ---- radii ---- */
+  --r-sm: 8px; --r: 14px; --r-lg: 22px; --r-xl: 32px; --r-pill: 999px;
+
+  /* ---- elevation ---- */
+  --sh-1: 0 1px 2px rgba(37,33,29,.05), 0 2px 8px rgba(37,33,29,.04);
+  --sh-2: 0 4px 12px rgba(37,33,29,.07), 0 12px 32px rgba(37,33,29,.06);
+  --sh-3: 0 12px 28px rgba(37,33,29,.10), 0 28px 64px rgba(37,33,29,.10);
+  --sh-gold: 0 8px 28px rgba(196,154,74,.30);
+
+  /* ---- motion ---- */
+  --e-out:  cubic-bezier(.22,.9,.28,1);
+  --e-in:   cubic-bezier(.6,.02,.9,.35);
+  --e-soft: cubic-bezier(.4,.14,.3,1);
+  --t-fast: .18s var(--e-out);
+  --t:      .32s var(--e-out);
+  --t-slow: .6s  var(--e-soft);
+
+  /* ---- layout ---- */
+  --rail-w:      68px;
+  --rail-w-open: 268px;
+  --topbar-h:    56px;
+  --z-rail: 60; --z-bar: 55; --z-drawer: 80; --z-overlay: 90; --z-toast: 120;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  margin:0;
+  font-family:var(--font-body);
+  font-size:var(--fs-body);
+  line-height:1.6;
+  color:var(--ink);
+  background:var(--paper);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body.no-scroll{ overflow:hidden; }
+
+h1,h2,h3,h4{ font-family:var(--font-display); font-weight:600; line-height:1.1; margin:0; letter-spacing:-.015em; }
+p{ margin:0; }
+a{ color:inherit; text-decoration:none; }
+img{ max-width:100%; display:block; }
+button{ font:inherit; color:inherit; cursor:pointer; border:0; background:none; }
+input,select,textarea{ font:inherit; color:inherit; }
+ul{ margin:0; padding:0; list-style:none; }
+
+:focus-visible{ outline:2.5px solid var(--gold); outline-offset:3px; border-radius:4px; }
+
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+.skip-link{
+  position:absolute; left:var(--sp-4); top:-100px; z-index:200;
+  background:var(--forest); color:#fff; padding:12px 20px; border-radius:var(--r-sm);
+  transition:top var(--t-fast);
+}
+.skip-link:focus{ top:var(--sp-4); }
+
+/* ---- shared primitives ---- */
+.shell{ width:min(1320px,100%); margin-inline:auto; padding-inline:var(--gutter); }
+.shell-wide{ width:min(1620px,100%); margin-inline:auto; padding-inline:var(--gutter); }
+
+.eyebrow{
+  font-size:var(--fs-xs); font-weight:600; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold-ink); display:inline-flex; align-items:center; gap:10px;
+}
+/* on dark sections the lighter gold is the accessible choice */
+.foot .eyebrow,[style*="forest-deep"] .eyebrow{ color:var(--gold-light); }
+.eyebrow::before{ content:""; width:26px; height:1px; background:currentColor; opacity:.6; }
+
+.lede{ color:var(--ink-2); max-width:62ch; }
+
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  padding:14px 26px; border-radius:var(--r-pill); font-weight:600; font-size:.92rem;
+  min-height:46px;
+  letter-spacing:.01em; transition:transform var(--t-fast), box-shadow var(--t-fast),
+  background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
+  white-space:nowrap; border:1.5px solid transparent; text-align:center;
+}
+.btn:active{ transform:translateY(1px) scale(.99); }
+.btn-primary{ background:var(--forest); color:#fff; box-shadow:var(--sh-2); }
+.btn-primary:hover{ background:var(--forest-deep); box-shadow:var(--sh-3); transform:translateY(-2px); }
+.btn-gold{ background:var(--gold); color:#fff; box-shadow:var(--sh-gold); }
+.btn-gold:hover{ background:#9C7B33; transform:translateY(-2px); }
+.btn-ghost{ border-color:var(--line); color:var(--ink); background:var(--surface); }
+.btn-ghost:hover{ border-color:var(--forest); color:var(--forest); transform:translateY(-2px); }
+.btn-wa{ background:#1FA855; color:#fff; }
+.btn-wa:hover{ background:var(--whatsapp-dark); transform:translateY(-2px); }
+.btn-sm{ padding:11px 18px; font-size:.84rem; min-height:42px; }
+.btn-block{ width:100%; }
+.btn[disabled]{ opacity:.5; pointer-events:none; }
+
+.chip{
+  display:inline-flex; align-items:center; gap:6px; padding:6px 14px;
+  border-radius:var(--r-pill); font-size:var(--fs-xs); font-weight:600;
+  background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line);
+}
+.chip-gold{ background:var(--gold-pale); color:#7A5E1E; border-color:#E0CFA4; }
+/* benefit tags — renamed intent, brand tint rather than green */
+.chip-green,.chip-brand{ background:var(--primary-tint); color:var(--primary);
+  border-color:color-mix(in srgb, var(--primary) 18%, transparent); }
+
+/* ---- scroll reveal ---- */
+.reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s var(--e-out), transform .7s var(--e-out); }
+.reveal.in{ opacity:1; transform:none; }
+.reveal[data-d="1"]{ transition-delay:.08s } .reveal[data-d="2"]{ transition-delay:.16s }
+.reveal[data-d="3"]{ transition-delay:.24s } .reveal[data-d="4"]{ transition-delay:.32s }
+.reveal[data-d="5"]{ transition-delay:.4s }
+
+@media (prefers-reduced-motion:reduce){
+  .reveal{ opacity:1 !important; transform:none !important; transition:none !important; }
+  *,*::before,*::after{ animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important; }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400"
+  role="img" aria-label="home category">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#F8E9E0"/>
+    </linearGradient>
+  </defs>
+  <!-- fills the full square: the container clips it to a circle, so any inner
+       ring here would read as a second, smaller disc -->
+  <rect width="400" height="400" fill="url(#g)"/>
+  <circle cx="200" cy="200" r="198" fill="#fff" opacity=".42"/>
+  <g transform="translate(200 200) scale(1.12) translate(-200 -200)">
+    
+    <path d="M118 150h124v58a62 62 0 0 1-124 0z" fill="#A24E2E" opacity=".92"/>
+    <path d="M242 162h22a26 26 0 0 1 0 52h-22" fill="none" stroke="#A24E2E" stroke-width="11"/>
+    <path d="M150 120q0-18 14-26M180 120q0-18 14-26M210 120q0-18 14-26"
+          stroke="#A24E2E" stroke-width="8" fill="none" stroke-linecap="round" opacity=".55"/>
+    <path d="M262 266v56" stroke="#A24E2E" stroke-width="10" stroke-linecap="round"/>
+    <path d="M262 266q-16-26 0-52 16 26 0 52z" fill="#A24E2E"/>
+    <path d="M140 268h120" stroke="#A24E2E" stroke-width="9" stroke-linecap="round" opacity=".85"/>
+  </g>
+</svg>

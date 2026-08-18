@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400"
+  role="img" aria-label="organic category">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#F3E3E6"/>
+    </linearGradient>
+  </defs>
+  <!-- fills the full square: the container clips it to a circle, so any inner
+       ring here would read as a second, smaller disc -->
+  <rect width="400" height="400" fill="url(#g)"/>
+  <circle cx="200" cy="200" r="198" fill="#fff" opacity=".42"/>
+  <g transform="translate(200 200) scale(1.12) translate(-200 -200)">
+    <path d="M200 292V96" stroke="#7A263A" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="200" cy="92" r="8" fill="#7A263A"/><ellipse cx="168.8" cy="250" rx="21.6" ry="12"
+                 fill="#7A263A" transform="rotate(-34 168.8 250)"/>
+               <ellipse cx="231.2" cy="250" rx="21.6" ry="12"
+                 fill="#7A263A" opacity=".72" transform="rotate(34 231.2 250)"/><ellipse cx="171.452" cy="224" rx="19.764000000000003" ry="10.98"
+                 fill="#7A263A" transform="rotate(-34 171.452 224)"/>
+               <ellipse cx="228.548" cy="224" rx="19.764000000000003" ry="10.98"
+                 fill="#7A263A" opacity=".72" transform="rotate(34 228.548 224)"/><ellipse cx="174.10399999999998" cy="198" rx="17.928000000000004" ry="9.96"
+                 fill="#7A263A" transform="rotate(-34 174.10399999999998 198)"/>
+               <ellipse cx="225.89600000000002" cy="198" rx="17.928000000000004" ry="9.96"
+                 fill="#7A263A" opacity=".72" transform="rotate(34 225.89600000000002 198)"/><ellipse cx="176.756" cy="172" rx="16.092000000000002" ry="8.94"
+                 fill="#7A263A" transform="rotate(-34 176.756 172)"/>
+               <ellipse cx="223.244" cy="172" rx="16.092000000000002" ry="8.94"
+                 fill="#7A263A" opacity=".72" transform="rotate(34 223.244 172)"/><ellipse cx="179.40800000000002" cy="146" rx="14.256" ry="7.919999999999999"
+                 fill="#7A263A" transform="rotate(-34 179.40800000000002 146)"/>
+               <ellipse cx="220.59199999999998" cy="146" rx="14.256" ry="7.919999999999999"
+                 fill="#7A263A" opacity=".72" transform="rotate(34 220.59199999999998 146)"/><ellipse cx="182.06" cy="120" rx="12.420000000000002" ry="6.8999999999999995"
+                 fill="#7A263A" transform="rotate(-34 182.06 120)"/>
+               <ellipse cx="217.94" cy="120" rx="12.420000000000002" ry="6.8999999999999995"
+                 fill="#7A263A" opacity=".72" transform="rotate(34 217.94 120)"/><ellipse cx="184.712" cy="94" rx="10.584000000000001" ry="5.88"
+                 fill="#7A263A" transform="rotate(-34 184.712 94)"/>
+               <ellipse cx="215.288" cy="94" rx="10.584000000000001" ry="5.88"
+                 fill="#7A263A" opacity=".72" transform="rotate(34 215.288 94)"/>
+  </g>
+</svg>
