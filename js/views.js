@@ -684,7 +684,7 @@ window.Views = (function () {
         <div class="cx-form">
           <h3>Send us a Message</h3>
           <p class="cx-form-sub">Have a question or want to place a custom order?
-            Your message opens in WhatsApp, so we can reply straight away.</p>
+            Send us your details and we'll get back to you shortly.</p>
           <div class="field"><label for="cf-name">Your Name</label>
           <input id="cf-name" autocomplete="name"></div>
 
@@ -694,8 +694,8 @@ window.Views = (function () {
           <div class="field"><label for="cf-msg">Message</label>
             <textarea id="cf-msg" rows="2"></textarea></div>
             
-          <button class="btn btn-wa btn-block" id="cfSend">
-            <i class="bi bi-whatsapp"></i> Send via WhatsApp</button>
+          <button class="btn btn-primary btn-block" id="cfSend" type="button">
+            <i class="bi bi-send"></i> Submit</button>
         </div>
 
         <aside class="cx-info">
@@ -724,13 +724,80 @@ window.Views = (function () {
 
   function wireContact() {
     const b = document.getElementById('cfSend'); if (!b) return;
-    b.onclick = () => {
-      const n = document.getElementById('cf-name').value.trim();
-      const p = document.getElementById('cf-phone').value.trim();
-      const m = document.getElementById('cf-msg').value.trim();
-      if (!m) { App.toast('Please write a message first', 'err'); return; }
-      const txt = `Hello Sri Lakshmi Mart!\n\n*Name:* ${n || '—'}\n*Phone:* ${p || '—'}\n\n${m}`;
-      window.open(App.waLink(txt), '_blank', 'noopener');
+
+    const WEB3FORMS_ACCESS_KEY =
+      'b08c2b9e-5d51-4b02-921a-65f09f4af581';
+
+    const GOOGLE_SHEETS_WEB_APP_URL =
+      'https://script.google.com/macros/s/AKfycby1D5hoYaMCHfSOwypC8r7YS_3JC9FieZvw7QUH609hBPaRJtFVvKjBynQDUVlN6Wo/exec';
+
+    b.onclick = async () => {
+      const n = document.getElementById('cf-name')?.value.trim() || '';
+      const p = document.getElementById('cf-phone')?.value.trim() || '';
+      const m = document.getElementById('cf-msg')?.value.trim() || '';
+
+      if (!n) {
+        App.toast('Please enter your name', 'err');
+        document.getElementById('cf-name')?.focus();
+        return;
+      }
+      if (!p) {
+        App.toast('Please enter your phone number', 'err');
+        document.getElementById('cf-phone')?.focus();
+        return;
+      }
+      if (!m) {
+        App.toast('Please write a message first', 'err');
+        document.getElementById('cf-msg')?.focus();
+        return;
+      }
+
+      const originalHTML = b.innerHTML;
+      b.disabled = true;
+      b.innerHTML = '<i class="bi bi-hourglass-split"></i> Submitting...';
+
+      try {
+        const web3Data = new FormData();
+        web3Data.append('access_key', WEB3FORMS_ACCESS_KEY);
+        web3Data.append('name', n);
+        web3Data.append('phone', p);
+        web3Data.append('message', m);
+        web3Data.append('subject', 'New Contact Enquiry - Sri Lakshmi Mart');
+        web3Data.append('from_name', 'Sri Lakshmi Mart Website');
+
+        const web3Response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: web3Data
+        });
+        const web3Result = await web3Response.json();
+        if (!web3Result.success) {
+          throw new Error(web3Result.message || 'Email submission failed');
+        }
+
+        await fetch(GOOGLE_SHEETS_WEB_APP_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({
+            name: n,
+            phone: p,
+            email: '',
+            subject: 'Website Contact Enquiry',
+            message: m
+          })
+        });
+
+        App.toast('Successfully submitted');
+        document.getElementById('cf-name').value = '';
+        document.getElementById('cf-phone').value = '';
+        document.getElementById('cf-msg').value = '';
+      } catch (err) {
+        console.error('Contact form error:', err);
+        App.toast('Unable to submit. Please try again.', 'err');
+      } finally {
+        b.disabled = false;
+        b.innerHTML = originalHTML;
+      }
     };
   }
 
